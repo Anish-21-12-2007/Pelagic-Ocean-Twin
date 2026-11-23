@@ -6,8 +6,6 @@ PELAGIC is an immersive React and WebGL experience that visualizes ocean gyres, 
 
 **Repository:** [Pelagic-Ocean-Twin](https://github.com/Anish-21-12-2007/Pelagic-Ocean-Twin)
 
-**Live deployment:** [https://anish-21-12-2007.github.io/Pelagic-Ocean-Twin/](https://anish-21-12-2007.github.io/Pelagic-Ocean-Twin/)
-
 ## Highlights
 
 - Scroll-scrubbed 100vw × 100vh video stage with crossfades between surface, subsurface, and interceptor scenes
