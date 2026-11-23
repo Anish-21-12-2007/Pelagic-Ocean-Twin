@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    background-color: #03060a;
+    color: #f2f5f8;
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+}
+
+.hairline-border {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.hairline-panel {
+  background: rgba(3, 6, 10, 0.56);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Precision editorial range slider */
+input[type='range'].pelagic-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+input[type='range'].pelagic-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #22d3ee;
+  border: 2px solid #03060a;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.7);
+  cursor: pointer;
+  transition: transform 150ms ease;
+}
+
+input[type='range'].pelagic-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type='range'].pelagic-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #22d3ee;
+  border: 2px solid #03060a;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.7);
+  cursor: pointer;
+}
+
+/* Subtle scanline grain for telemetry photography frames */
+.frame-vignette::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(3, 6, 10, 0) 48%,
+    rgba(3, 6, 10, 0.72) 100%
+  );
+}
