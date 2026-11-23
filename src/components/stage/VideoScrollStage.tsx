@@ -7,9 +7,9 @@ interface VideoScrollStageProps {
 }
 
 const CLIPS = [
-  { id: 'surface', src: '/media/clip-1-surface.mp4', label: 'Surface Gyre Sweep' },
-  { id: 'subsurface', src: '/media/clip-2-subsurface.mp4', label: 'Sub-Surface Microplastic Column' },
-  { id: 'interceptor', src: '/media/clip-3-interceptor.mp4', label: 'Autonomous Interceptor Fleet' },
+  { id: 'surface', src: `${import.meta.env.BASE_URL}media/clip-1-surface.mp4`, label: 'Surface Gyre Sweep' },
+  { id: 'subsurface', src: `${import.meta.env.BASE_URL}media/clip-2-subsurface.mp4`, label: 'Sub-Surface Microplastic Column' },
+  { id: 'interceptor', src: `${import.meta.env.BASE_URL}media/clip-3-interceptor.mp4`, label: 'Autonomous Interceptor Fleet' },
 ] as const;
 
 function clamp01(v: number): number {

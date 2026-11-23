@@ -132,7 +132,7 @@ export function Chapter02GyreSelector({
 
               <div className="frame-vignette relative aspect-[16/9] w-full overflow-hidden border border-white/12 bg-[#03060A]">
                 <img
-                  src="/images/gyre-map.png"
+                  src={`${import.meta.env.BASE_URL}images/gyre-map.png`}
                   alt="Bathymetry and subtropical gyre current vector convergence map"
                   className="h-full w-full object-cover transition-transform duration-700 ease-out"
                   style={{

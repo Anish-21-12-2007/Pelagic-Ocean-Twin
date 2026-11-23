@@ -53,7 +53,7 @@ export function Chapter04DroneFleet({
 
               <div className="frame-vignette relative aspect-[16/9] w-full overflow-hidden border border-white/12 bg-[#03060A]">
                 <img
-                  src="/images/drone-render.png"
+                  src={`${import.meta.env.BASE_URL}images/drone-render.png`}
                   alt="Pelagic MK-IV autonomous solar-winged catamaran interceptor render"
                   className="h-full w-full object-cover"
                   style={{ transform: 'scale(1.07)' }}
